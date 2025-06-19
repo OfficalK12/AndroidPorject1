@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Màu cho ứng dụng Foody -->
+    <color name="foody_purple_dark">#4A0072</color>
+    <color name="foody_background">#EAEAF2</color>
+    <color name="foody_red">#D32F2F</color>
+    <color name="foody_blue_button">#1976D2</color>
+    <color name="foody_text_link">#9C27B0</color>
+</resources>

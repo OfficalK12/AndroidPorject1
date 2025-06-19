@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources xmlns:tools="http://schemas.android.com/tools">
+        <style name="SomeOtherTheme" parent="Theme.Material3.DayNight.NoActionBar"/>
+
+        <style name="Base.Theme.MyFood_TChinh" parent="Theme.Material3.DayNight.NoActionBar">
+            <item name="colorPrimary">@color/foody_purple_dark</item>
+            <item name="colorPrimaryVariant">@color/foody_purple_dark</item>
+            <item name="colorOnPrimary">@color/white</item>
+
+        </style>
+    </resources>
