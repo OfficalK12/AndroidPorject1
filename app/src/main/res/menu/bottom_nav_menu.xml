@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_search" android:title="Tìm kiếm" android:icon="@drawable/search"/>
+    <item android:id="@+id/nav_saved" android:title="Đã lưu" android:icon="@drawable/heart"/>
+    <item android:id="@+id/nav_booking" android:title="Đặt chỗ" android:icon="@drawable/sc"/>
+    <item android:id="@+id/nav_account" android:title="Tài khoản" android:icon="@drawable/acc"/>
+</menu>
