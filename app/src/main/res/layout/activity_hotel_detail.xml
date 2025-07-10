@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Hình ảnh khách sạn -->
+        <ImageView
+            android:id="@+id/imgHotelDetail"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Tên khách sạn -->
+        <TextView
+            android:id="@+id/txtDetailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khách sạn Sài Gòn Park"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center" />
+
+        <!-- Địa chỉ -->
+        <TextView
+            android:id="@+id/txtDetailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="185 Lý Tự Trọng, Q.1"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp"
+            android:textAlignment="center" />
+
+        <!-- Thành phố -->
+        <TextView
+            android:id="@+id/txtDetailCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TP. Hồ Chí Minh"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center" />
+
+        <!-- Ghi chú -->
+        <TextView
+            android:id="@+id/txtDetailNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú: Khách sạn đẹp, sạch sẽ gần trung tâm."
+            android:textColor="#666666"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center" />
+
+        <!-- Nút yêu thích và quay lại -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔙 Quay lại"
+                android:backgroundTint="#9E9EFA"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️ Yêu thích"
+                android:backgroundTint="#9E9EFA"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Nút đặt phòng -->
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📩 Đặt phòng ngay"
+            android:backgroundTint="#7E57C2"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <!-- Danh sách phòng -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách phòng"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerRooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</ScrollView>
