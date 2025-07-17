@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/txtHotelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên khách sạn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <!-- Bạn có thể thêm các thông tin khác như ngày đặt, địa chỉ... dưới đây nếu muốn -->
+
+</LinearLayout>

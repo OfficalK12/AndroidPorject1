@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmedBookingDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi Tiết Đặt Chỗ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailHotelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Tên Khách Sạn"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailHotelAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:text="Địa chỉ khách sạn"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin phòng đã đặt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Loại phòng: [Tên loại phòng]"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailRoomCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:text="Sức chứa: [Số người]"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết giao dịch"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Người đặt: Không xác định"
+            android:layout_marginBottom="8dp" />
+
+
+        <TextView
+            android:id="@+id/tvConfirmDetailCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Ngày nhận phòng: DD/MM/YYYY"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:text="Ngày trả phòng: DD/MM/YYYY"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:text="Phương thức thanh toán: [Phương thức]"/>
+
+        <TextView
+            android:id="@+id/tvConfirmDetailTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:layout_marginTop="16dp"
+            android:text="Tổng tiền: 0.000.000 VND"/>
+
+        <Button
+            android:id="@+id/btnCancelBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Hủy Đặt Chỗ"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image section -->
+        <ImageView
+            android:id="@+id/imgHotel"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Details section -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <!-- Hotel Info -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtHotelName"
+                    android:text="Hôtel Da Vinci And Spa"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtHotelAddress"
+                    android:text="25 rue des Saints-Pères, Paris, Pháp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Booking Details -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Chi tiết đặt phòng của bạn"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtCheckIn"
+                    android:text="Nhận phòng: T6, 16 tháng 2 2024"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtCheckOut"
+                    android:text="Trả phòng: T7, 17 tháng 2 2024"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtNights"
+                    android:text="Tổng thời gian lưu trú: 1 đêm"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Thông tin người đặt"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtUserInfo"
+                    android:layout_marginTop="8dp"
+                    android:text="Khách: ..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Price Summary -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Tóm tắt giá"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtTotalPrice"
+                    android:text="Giá: 1.654.200 VNĐ (đã bao gồm thuế và phí)"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnConfirmBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đặt chỗ"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/black"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
